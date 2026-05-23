@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Travel Destination Graph Explorer</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Base Dark Theme */
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Layout Structure */
+        #graph-container {
+            flex: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        #side-panel {
+            width: 380px;
+            background-color: #1e293b;
+            border-left: 1px solid #334155;
+            padding: 24px;
+            box-shadow: -4px 0 15px rgba(0,0,0,0.3);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Typography & Panel Elements */
+        h1 { font-size: 1.2rem; margin-top: 0; color: #e2e8f0; border-bottom: 1px solid #334155; padding-bottom: 15px; }
+        h2 { font-size: 1.5rem; margin: 0 0 5px 0; color: #38bdf8; display: flex; align-items: center; gap: 10px; }
+        .location-meta { font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px; }
+        
+        .instruction {
+            color: #94a3b8;
+            font-style: italic;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 20px;
+        }
+        .btn {
+            flex: 1;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .btn:hover { background: #1d4ed8; }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+        .btn-outline:hover { background: rgba(56, 189, 248, 0.1); }
+
+        /* Fun Factor Metric Styles */
+        .score-container {
+            text-align: center;
+            background-color: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #334155;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .score-value { font-size: 3rem; font-weight: bold; color: #38bdf8; line-height: 1; text-shadow: 0 2px 10px rgba(56,189,248,0.3); }
+        .score-label { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+
+        .metric { margin-bottom: 16px; }
+        .metric-header { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px; }
+        .metric-title { color: #cbd5e1; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+        .metric-rating { color: #fbbf24; font-weight: bold; }
+        .metric-bar-bg { background-color: #334155; height: 8px; border-radius: 4px; overflow: hidden; }
+        .metric-bar-fill { background-color: #38bdf8; height: 100%; transition: width 0.5s ease-in-out; }
+
+        /* Leaderboard Styles */
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            background: #0f172a;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .leaderboard-item:hover { border-color: #38bdf8; transform: translateX(5px); }
+        .lb-rank { font-size: 1.2rem; font-weight: bold; color: #94a3b8; width: 30px; }
+        .lb-img { width: 40px; height: 40px; border-radius: 50%; margin-right: 15px; border: 2px solid #38bdf8; }
+        .lb-info { flex: 1; }
+        .lb-name { font-weight: bold; color: #e2e8f0; }
+        .lb-score { font-size: 1.2rem; font-weight: bold; color: #fbbf24; }
+
+        /* SVG Graph Styling */
+        .node-dest { stroke: #38bdf8; stroke-width: 3px; cursor: pointer; transition: stroke-width 0.2s; }
+        .node-dest:hover { stroke-width: 5px; stroke: #7dd3fc; }
+        .node-trait { fill: #1e293b; stroke: #10b981; stroke-width: 2px; cursor: default; }
+        
+        .link { stroke: #475569; stroke-opacity: 0.6; stroke-width: 1.5px; }
+        .link.highlight { stroke: #38bdf8; stroke-opacity: 1; stroke-width: 3px; }
+        
+        .node-label { fill: #f8fafc; font-size: 14px; font-weight: bold; pointer-events: none; text-anchor: middle; text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 -1px 2px rgba(0,0,0,0.5); }
+        .trait-label { fill: #a7f3d0; font-size: 11px; font-weight: 500; pointer-events: none; text-anchor: middle; }
+    </style>
+</head>
+<body>
+
+    <div id="graph-container"></div>
+    
+    <div id="side-panel">
+        <h1>Explorer Dashboard</h1>
+        
+        <div class="controls">
+            <button class="btn" id="btn-leaderboard">🏆 Fun Factor Rank</button>
+            <button class="btn btn-outline" id="btn-reset">↺ Reset</button>
+        </div>
+
+        <div id="default-instruction" class="instruction">
+            <p style="font-size: 2rem; margin-bottom: 10px;">🗺️</p>
+            Click on a destination node (image) in the graph to view its lexical connections and local specs.
+        </div>
+        
+        <!-- Detailed Destination View -->
+        <div id="details-container" style="display: none;">
+            <h2 id="dest-name"><img id="dest-header-img" src="" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid #38bdf8;"> <span>Name</span></h2>
+            <div class="location-meta" id="dest-meta">Location Info</div>
+            
+            <div class="score-container">
+                <div class="score-value" id="overall-score">0.0</div>
+                <div class="score-label">Overall Fun Factor</div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px;">Aggregated Local Ratings</div>
+            <div id="metrics-container">
+                <!-- Metrics injected via JS -->
+            </div>
+        </div>
+
+        <!-- Leaderboard View -->
+        <div id="leaderboard-container" style="display: none;">
+            <h3 style="color: #cbd5e1; margin-top: 0;">Top Destinations</h3>
+            <div id="leaderboard-list"></div>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. DATA DEFINITION ---
+        const metricIcons = { Restaurants: '🍽️', Attractions: '🎡', Nightlife: '🍸', Outdoors: '🌲', Shopping: '🛍️' };
+
+        const destinations = [
+            { id: 'Banff NP', type: 'dest', meta: 'Alberta, Canada', score: 8.5, img: 'https://picsum.photos/seed/banff/200/200', metrics: { Restaurants: 4.2, Attractions: 4.8, Nightlife: 3.5, Outdoors: 5.0, Shopping: 4.0 } },
+            { id: 'Olympic NP', type: 'dest', meta: 'Washington, USA', score: 7.8, img: 'https://picsum.photos/seed/olympic/200/200', metrics: { Restaurants: 3.2, Attractions: 4.5, Nightlife: 1.8, Outdoors: 4.9, Shopping: 2.5 } },
+            { id: 'Grand Canyon', type: 'dest', meta: 'Arizona, USA', score: 8.2, img: 'https://picsum.photos/seed/canyon/200/200', metrics: { Restaurants: 3.5, Attractions: 5.0, Nightlife: 2.5, Outdoors: 4.8, Shopping: 3.0 } },
+            { id: 'Badlands NP', type: 'dest', meta: 'South Dakota, USA', score: 6.5, img: 'https://picsum.photos/seed/badlands/200/200', metrics: { Restaurants: 2.5, Attractions: 4.0, Nightlife: 1.5, Outdoors: 4.5, Shopping: 2.0 } },
+            { id: "Coeur d'Alene", type: 'dest', meta: 'Idaho, USA', score: 7.6, img: 'https://picsum.photos/seed/idaho/200/200', metrics: { Restaurants: 4.0, Attractions: 3.8, Nightlife: 3.5, Outdoors: 4.2, Shopping: 3.8 } },
+            { id: 'Lake Geneva', type: 'dest', meta: 'Vaud, Switzerland', score: 8.8, img: 'https://picsum.photos/seed/geneva/200/200', metrics: { Restaurants: 4.8, Attractions: 4.5, Nightlife: 4.2, Outdoors: 4.0, Shopping: 4.9 } },
+            { id: 'Lake Tahoe', type: 'dest', meta: 'CA/NV, USA', score: 8.9, img: 'https://picsum.photos/seed/tahoe/200/200', metrics: { Restaurants: 4.5, Attractions: 4.6, Nightlife: 4.5, Outdoors: 4.8, Shopping: 4.1 } }
+        ];
+
+        const traits = [
+            { id: 'Alpine', type: 'trait', icon: '⛰️' }, { id: 'Lake', type: 'trait', icon: '💧' }, { id: 'Desert', type: 'trait', icon: '🏜️' },
+            { id: 'Forest', type: 'trait', icon: '🌲' }, { id: 'Canyon', type: 'trait', icon: '🧗' }, { id: 'Luxury', type: 'trait', icon: '✨' },
+            { id: 'Wildlife', type: 'trait', icon: '🦌' }, { id: 'Glaciers', type: 'trait', icon: '🧊' }, { id: 'Boating', type: 'trait', icon: '⛵' }
+        ];
+
+        const nodesData = [...destinations, ...traits];
+
+        const linksData = [
+            { source: 'Banff NP', target: 'Alpine' }, { source: 'Banff NP', target: 'Forest' }, { source: 'Banff NP', target: 'Wildlife' }, { source: 'Banff NP', target: 'Glaciers' },
+            { source: 'Olympic NP', target: 'Forest' }, { source: 'Olympic NP', target: 'Alpine' }, { source: 'Olympic NP', target: 'Wildlife' },
+            { source: 'Grand Canyon', target: 'Canyon' }, { source: 'Grand Canyon', target: 'Desert' }, { source: 'Grand Canyon', target: 'Wildlife' },
+            { source: 'Badlands NP', target: 'Desert' }, { source: 'Badlands NP', target: 'Wildlife' }, { source: 'Badlands NP', target: 'Canyon' },
+            { source: "Coeur d'Alene", target: 'Lake' }, { source: "Coeur d'Alene", target: 'Forest' }, { source: "Coeur d'Alene", target: 'Boating' },
+            { source: 'Lake Geneva', target: 'Lake' }, { source: 'Lake Geneva', target: 'Luxury' }, { source: 'Lake Geneva', target: 'Boating' }, { source: 'Lake Geneva', target: 'Alpine' },
+            { source: 'Lake Tahoe', target: 'Lake' }, { source: 'Lake Tahoe', target: 'Alpine' }, { source: 'Lake Tahoe', target: 'Luxury' }, { source: 'Lake Tahoe', target: 'Forest' }, { source: 'Lake Tahoe', target: 'Boating' }
+        ];
+
+        // --- 2. D3 PHYSICS & RENDERING ---
+        const container = document.getElementById('graph-container');
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        const svg = d3.select("#graph-container")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Define Image Patterns for nodes
+        const defs = svg.append("defs");
+        defs.selectAll("pattern")
+            .data(destinations)
+            .enter().append("pattern")
+            .attr("id", d => d.id.replace(/\s+/g, '-').replace(/'/g, '').toLowerCase() + "-img")
+            .attr("width", 1)
+            .attr("height", 1)
+            .attr("patternContentUnits", "objectBoundingBox")
+            .append("image")
+            .attr("href", d => d.img)
+            .attr("width", 1)
+            .attr("height", 1)
+            .attr("preserveAspectRatio", "xMidYMid slice");
+
+        // Zoom capabilities
+        const g = svg.append("g");
+        svg.call(d3.zoom().on("zoom", (e) => g.attr("transform", e.transform)));
+
+        // Physics Simulation
+        const simulation = d3.forceSimulation(nodesData)
+            .force("link", d3.forceLink(linksData).id(d => d.id).distance(150))
+            .force("charge", d3.forceManyBody().strength(-600))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collide", d3.forceCollide().radius(d => d.type === 'dest' ? 45 : 30));
+
+        // Draw Links
+        const link = g.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(linksData)
+            .enter().append("line")
+            .attr("class", "link");
+
+        // Draw Nodes
+        const node = g.append("g")
+            .attr("class", "nodes")
+            .selectAll("circle")
+            .data(nodesData)
+            .enter().append("circle")
+            .attr("r", d => d.type === 'dest' ? 35 : 18)
+            .attr("class", d => d.type === 'dest' ? 'node-dest' : 'node-trait')
+            .attr("fill", d => d.type === 'dest' ? `url(#${d.id.replace(/\s+/g, '-').replace(/'/g, '').toLowerCase()}-img)` : '#1e293b')
+            .on("click", (event, d) => handleNodeClick(d))
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+        // Draw Labels
+        const label = g.append("g")
+            .attr("class", "labels")
+            .selectAll("text")
+            .data(nodesData)
+            .enter().append("text")
+            .attr("class", d => d.type === 'dest' ? 'node-label' : 'trait-label')
+            .attr("dy", d => d.type === 'dest' ? 55 : 4)
+            .text(d => d.type === 'dest' ? d.id : `${d.icon} ${d.id}`);
+
+        simulation.on("tick", () => {
+            link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+            node.attr("cx", d => d.x).attr("cy", d => d.y);
+            label.attr("x", d => d.x).attr("y", d => d.y);
+        });
+
+        // --- 3. UI LOGIC ---
+        function handleNodeClick(d) {
+            if (d.type !== 'dest') return;
+
+            // Visual Highlighting in graph
+            node.style("opacity", o => isConnected(d, o) ? 1 : 0.15);
+            link.attr("class", l => (l.source.id === d.id || l.target.id === d.id) ? "link highlight" : "link")
+                .style("opacity", l => (l.source.id === d.id || l.target.id === d.id) ? 1 : 0.1);
+            label.style("opacity", o => isConnected(d, o) ? 1 : 0.15);
+
+            // Update Panel UI
+            showPanel('details');
+            
+            document.querySelector('#dest-name span').innerText = d.id;
+            document.getElementById('dest-header-img').src = d.img;
+            document.getElementById('dest-meta').innerText = d.meta;
+            document.getElementById('overall-score').innerText = d.score.toFixed(1);
+
+            const metricsContainer = document.getElementById('metrics-container');
+            metricsContainer.innerHTML = ''; 
+
+            for (const [key, value] of Object.entries(d.metrics)) {
+                const percentage = (value / 5.0) * 100;
+                const icon = metricIcons[key] || '📊';
+                
+                metricsContainer.innerHTML += `
+                    <div class="metric">
+                        <div class="metric-header">
+                            <span class="metric-title">${icon} ${key}</span>
+                            <span class="metric-rating">${value.toFixed(1)} <span style="color:#64748b; font-size:0.75rem;">/ 5.0</span></span>
+                        </div>
+                        <div class="metric-bar-bg">
+                            <div class="metric-bar-fill" style="width: ${percentage}%"></div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        function isConnected(a, b) {
+            return a.id === b.id || linksData.some(l => (l.source.id === a.id && l.target.id === b.id) || (l.source.id === b.id && l.target.id === a.id));
+        }
+
+        // Leaderboard Generation
+        document.getElementById('btn-leaderboard').addEventListener('click', () => {
+            showPanel('leaderboard');
+            const sortedDests = [...destinations].sort((a, b) => b.score - a.score);
+            const lbList = document.getElementById('leaderboard-list');
+            lbList.innerHTML = '';
+            
+            sortedDests.forEach((d, index) => {
+                const item = document.createElement('div');
+                item.className = 'leaderboard-item';
+                item.innerHTML = `
+                    <div class="lb-rank">#${index + 1}</div>
+                    <img class="lb-img" src="${d.img}" alt="${d.id}">
+                    <div class="lb-info">
+                        <div class="lb-name">${d.id}</div>
+                        <div style="font-size: 0.8rem; color: #94a3b8;">${d.meta}</div>
+                    </div>
+                    <div class="lb-score">${d.score.toFixed(1)}</div>
+                `;
+                item.onclick = () => handleNodeClick(d);
+                lbList.appendChild(item);
+            });
+        });
+
+        document.getElementById('btn-reset').addEventListener('click', () => {
+            node.style("opacity", 1);
+            link.attr("class", "link").style("opacity", 1);
+            label.style("opacity", 1);
+            showPanel('default');
+        });
+
+        function showPanel(panelType) {
+            document.getElementById('default-instruction').style.display = panelType === 'default' ? 'block' : 'none';
+            document.getElementById('details-container').style.display = panelType === 'details' ? 'block' : 'none';
+            document.getElementById('leaderboard-container').style.display = panelType === 'leaderboard' ? 'block' : 'none';
+        }
+
+        // D3 Drag physics
+        function dragstarted(event, d) { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }
+        function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
+        function dragended(event, d) { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
+
+    </script>
+</body>
+</html>
