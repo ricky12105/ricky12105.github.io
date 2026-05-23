@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "banff-np",
+    "name": "Banff National Park",
+    "region": { "country": "Canada", "subdivision": "Alberta", "continent": "North America" },
+    "coordinates": { "lat": 51.4968, "lon": -115.9281 },
+    "elevation_m": 1383,
+    "climate_zone": "subarctic / alpine",
+    "best_seasons": ["summer", "winter"],
+    "shoulder_seasons": ["late spring", "early fall"],
+    "cost_tier": 3,
+    "cost_notes": "Park pass required; lodging in the town of Banff is mid-range but surges in ski and summer windows.",
+    "access": { "nearest_major_airport": "YYC", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["English", "French"],
+    "currency": "CAD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Luca Bravo / Unsplash",
+      "alt": "Turquoise waters of Moraine Lake surrounded by snow-capped Rocky Mountain peaks"
+    },
+    "summary": "A UNESCO World Heritage mountain park with turquoise glacier lakes, thermal hot springs, and wolf sightings before breakfast. The town of Banff is ski-lodge cozy but can feel like a theme park in peak season.",
+    "signature_experiences": [
+      "Sunrise at Moraine Lake with the Valley of the Ten Peaks",
+      "Icefields Parkway drive to Jasper — 230km of continuous mountain spectacle",
+      "Banff Upper Hot Springs soak after a full day on the trails"
+    ],
+    "caveats": [
+      "Lake Louise and Moraine Lake require timed-entry reservations June–September; book months ahead.",
+      "A vehicle is essential for most trailheads — the town is walkable but the park is not."
+    ],
+    "metrics": {
+      "food_scene": 3.5,
+      "cultural_depth": 3.0,
+      "outdoor_access": 5.0,
+      "nightlife": 2.5,
+      "shopping": 3.0,
+      "family_friendly": 4.5,
+      "romance": 4.5,
+      "adventure": 4.8,
+      "off_season_viability": 3.5,
+      "photography": 4.9,
+      "crowd_pressure": 3.8,
+      "value_for_money": 3.0
+    },
+    "tags": ["banff", "canadian-rockies", "national-park"]
+  },
+  {
+    "id": "olympic-np",
+    "name": "Olympic National Park",
+    "region": { "country": "United States", "subdivision": "Washington", "continent": "North America" },
+    "coordinates": { "lat": 47.8021, "lon": -123.6044 },
+    "elevation_m": 0,
+    "climate_zone": "oceanic / temperate rainforest",
+    "best_seasons": ["summer"],
+    "shoulder_seasons": ["late spring", "early fall"],
+    "cost_tier": 2,
+    "cost_notes": "Park entry fee is modest; lodging in Port Angeles or Sequim is affordable.",
+    "access": { "nearest_major_airport": "SEA", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1551525212-a1dc18871978?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jonatan Pie / Unsplash",
+      "alt": "Moss-draped old-growth trees in the Hoh Rain Forest under diffuse green light"
+    },
+    "summary": "Three ecosystems in one park: temperate rainforest dripping with moss, a rugged Pacific coastline, and alpine meadows above the treeline. Not many places on Earth offer that range within a day's drive.",
+    "signature_experiences": [
+      "Hoh Rain Forest Hall of Mosses — an otherworldly half-mile loop",
+      "Ruby Beach at low tide, with sea stacks rising from mist",
+      "Hurricane Ridge meadows in July when the wildflowers are unreasonable"
+    ],
+    "caveats": [
+      "Weather is reliably unpredictable; bring full rain gear even in July.",
+      "Few services inside the park — fuel up and stock food in Port Angeles."
+    ],
+    "metrics": {
+      "food_scene": 2.5,
+      "cultural_depth": 2.0,
+      "outdoor_access": 5.0,
+      "nightlife": 1.5,
+      "shopping": 2.0,
+      "family_friendly": 4.2,
+      "romance": 4.0,
+      "adventure": 4.3,
+      "off_season_viability": 2.5,
+      "photography": 4.7,
+      "crowd_pressure": 2.5,
+      "value_for_money": 4.0
+    },
+    "tags": ["olympic", "rainforest", "pacific-northwest"]
+  },
+  {
+    "id": "grand-canyon",
+    "name": "Grand Canyon",
+    "region": { "country": "United States", "subdivision": "Arizona", "continent": "North America" },
+    "coordinates": { "lat": 36.1069, "lon": -112.1129 },
+    "elevation_m": 2099,
+    "climate_zone": "semi-arid high desert",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Park entry is cheap; rim lodges are pricey but accessible alternatives exist in Williams or Flagstaff.",
+    "access": { "nearest_major_airport": "PHX", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "David Kovalenko / Unsplash",
+      "alt": "Layered canyon walls at sunrise, shadows moving across a mile-deep geological cross-section"
+    },
+    "summary": "One of those rare places that actually exceeds the photographs. A mile deep, eighteen miles wide, and 5 million years of geological storytelling — and that's before you descend into it.",
+    "signature_experiences": [
+      "Rim Trail sunrise from Mather Point before crowds arrive",
+      "Bright Angel Trail descent to Indian Garden oasis (spring/fall only)",
+      "Colorado River rafting through the inner gorge — multi-day commitment, worth every day"
+    ],
+    "caveats": [
+      "South Rim is massively crowded May–September; consider North Rim for solitude (closed Nov–mid-May).",
+      "Inner canyon hiking in summer is genuinely dangerous — July temps at the bottom regularly top 43°C."
+    ],
+    "metrics": {
+      "food_scene": 2.5,
+      "cultural_depth": 3.2,
+      "outdoor_access": 5.0,
+      "nightlife": 1.5,
+      "shopping": 2.0,
+      "family_friendly": 3.8,
+      "romance": 4.0,
+      "adventure": 4.5,
+      "off_season_viability": 3.5,
+      "photography": 5.0,
+      "crowd_pressure": 4.2,
+      "value_for_money": 3.5
+    },
+    "tags": ["grand-canyon", "arizona", "national-park"]
+  },
+  {
+    "id": "badlands-np",
+    "name": "Badlands National Park",
+    "region": { "country": "United States", "subdivision": "South Dakota", "continent": "North America" },
+    "coordinates": { "lat": 43.8554, "lon": -102.3397 },
+    "elevation_m": 744,
+    "climate_zone": "semi-arid harsh continental",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 1,
+    "cost_notes": "One of the most affordable national parks; the Badlands Loop Road is free once inside.",
+    "access": { "nearest_major_airport": "RAP", "flight_access_score": 2, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1570447571776-a46f66a95fb7?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Biegun Wschodni / Unsplash",
+      "alt": "Pink and cream badlands spires at dusk under a vast prairie sky"
+    },
+    "summary": "Moon-on-Earth geology layered in pink and cream, with bison and bighorn sheep sharing the grasslands. Genuinely remote and genuinely strange — this is not a crowd-pleaser but it rewards the curious.",
+    "signature_experiences": [
+      "Notch Trail above the badlands formations at dawn",
+      "Night sky at Conata Picnic Area — minimal light pollution, maximum Milky Way",
+      "Roberts Prairie Dog Town — an entire city-state of rodents"
+    ],
+    "caveats": [
+      "Extremely limited dining and lodging inside the park — base in Wall or Rapid City.",
+      "Summer lightning and hailstorms arrive fast and without warning."
+    ],
+    "metrics": {
+      "food_scene": 1.5,
+      "cultural_depth": 2.5,
+      "outdoor_access": 4.5,
+      "nightlife": 1.0,
+      "shopping": 1.5,
+      "family_friendly": 3.5,
+      "romance": 3.0,
+      "adventure": 3.8,
+      "off_season_viability": 2.5,
+      "photography": 4.6,
+      "crowd_pressure": 1.8,
+      "value_for_money": 4.5
+    },
+    "tags": ["badlands", "south-dakota", "national-park"]
+  },
+  {
+    "id": "coeur-dalene",
+    "name": "Coeur d'Alene",
+    "region": { "country": "United States", "subdivision": "Idaho", "continent": "North America" },
+    "coordinates": { "lat": 47.6777, "lon": -116.7805 },
+    "elevation_m": 702,
+    "climate_zone": "humid continental semi-arid",
+    "best_seasons": ["summer"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 2,
+    "cost_notes": "Resort area has premium lodging; surrounding areas offer affordable alternatives.",
+    "access": { "nearest_major_airport": "GEG", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1567101343588-9a8f3b0d7ba4?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Tim Peterson / Unsplash",
+      "alt": "Deep blue lake reflecting pine-covered hills on a calm summer morning"
+    },
+    "summary": "An inland sea in the Idaho panhandle — the lake is impossibly blue, the resort strip is festive without being crass, and you're a short drive from some of the country's least-discovered mountain terrain.",
+    "signature_experiences": [
+      "Lake cruise on the Coeur d'Alene Resort dinner boat at sunset",
+      "Tubbs Hill trail loop above the water — free, short, consistently beautiful",
+      "Rafting the Spokane River below Post Falls Dam"
+    ],
+    "caveats": [
+      "The resort area gets congested on summer weekends — midweek visits are significantly better.",
+      "Limited public transit; a car is essential for anything beyond the downtown strip."
+    ],
+    "metrics": {
+      "food_scene": 3.2,
+      "cultural_depth": 2.0,
+      "outdoor_access": 4.2,
+      "nightlife": 2.8,
+      "shopping": 3.0,
+      "family_friendly": 4.5,
+      "romance": 4.0,
+      "adventure": 3.8,
+      "off_season_viability": 2.5,
+      "photography": 4.2,
+      "crowd_pressure": 2.0,
+      "value_for_money": 3.8
+    },
+    "tags": ["coeur-dalene", "idaho", "lake"]
+  },
+  {
+    "id": "sedona",
+    "name": "Sedona",
+    "region": { "country": "United States", "subdivision": "Arizona", "continent": "North America" },
+    "coordinates": { "lat": 34.8697, "lon": -111.7610 },
+    "elevation_m": 1326,
+    "climate_zone": "semi-arid high desert",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 3,
+    "cost_notes": "Accommodation prices have surged; midweek and shoulder months offer better value.",
+    "access": { "nearest_major_airport": "PHX", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "David McEachan / Unsplash",
+      "alt": "Red sandstone buttes glowing amber-gold at sunrise under a deep blue desert sky"
+    },
+    "summary": "Red rock formations that glow amber at dawn and rose-gold at dusk, ringed by over 200 miles of trails. The wellness industry has colonized it — but strip away the vortex tours and it's genuinely beautiful terrain.",
+    "signature_experiences": [
+      "Bell Rock and Courthouse Butte loop at sunrise — arrive before the lot fills",
+      "West Fork trail through Oak Creek Canyon, early autumn for color",
+      "Airport Mesa stargazing after dark — surprisingly dark for a tourist town"
+    ],
+    "caveats": [
+      "SR 179 through the Village of Oak Creek is brutal gridlock on weekends; park at trailheads the night before.",
+      "Wellness-tourism markup is real — verify prices for any spa or tour before booking."
+    ],
+    "metrics": {
+      "food_scene": 3.5,
+      "cultural_depth": 2.8,
+      "outdoor_access": 4.8,
+      "nightlife": 2.0,
+      "shopping": 3.5,
+      "family_friendly": 3.5,
+      "romance": 4.5,
+      "adventure": 4.5,
+      "off_season_viability": 4.0,
+      "photography": 5.0,
+      "crowd_pressure": 3.5,
+      "value_for_money": 3.2
+    },
+    "tags": ["sedona", "arizona", "red-rocks"]
+  },
+  {
+    "id": "new-orleans",
+    "name": "New Orleans",
+    "region": { "country": "United States", "subdivision": "Louisiana", "continent": "North America" },
+    "coordinates": { "lat": 29.9511, "lon": -90.0715 },
+    "elevation_m": 1,
+    "climate_zone": "humid subtropical",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Mardi Gras and Jazz Fest surge hotel prices dramatically; shoulder periods offer excellent value.",
+    "access": { "nearest_major_airport": "MSY", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1568091200413-8ebadc5aa12a?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Samuel Schneider / Unsplash",
+      "alt": "French Quarter cast-iron balconies draped with greenery on a warm evening"
+    },
+    "summary": "A city that eats and drinks for a living — 300 years of Creole, Cajun, African, and French history layered into one of the most sonically and gastronomically alive cities in North America.",
+    "signature_experiences": [
+      "Beignets and café au lait at Café Du Monde at midnight — the crowds are the atmosphere",
+      "Second Line parade through the Marigny on a Sunday afternoon",
+      "Gumbo at Dooky Chase's or turtle soup at Antoine's — non-negotiable"
+    ],
+    "caveats": [
+      "The French Quarter is equal parts sublime and genuinely chaotic; stay in the Garden District or Marigny and visit Bourbon Street on your own terms.",
+      "Summer heat and humidity are not figurative — high 30s°C with 80%+ humidity from June through September."
+    ],
+    "metrics": {
+      "food_scene": 5.0,
+      "cultural_depth": 4.5,
+      "outdoor_access": 2.5,
+      "nightlife": 5.0,
+      "shopping": 3.5,
+      "family_friendly": 2.5,
+      "romance": 4.0,
+      "adventure": 2.5,
+      "off_season_viability": 3.5,
+      "photography": 4.5,
+      "crowd_pressure": 3.5,
+      "value_for_money": 3.8
+    },
+    "tags": ["new-orleans", "louisiana", "jazz"]
+  },
+  {
+    "id": "zion-np",
+    "name": "Zion National Park",
+    "region": { "country": "United States", "subdivision": "Utah", "continent": "North America" },
+    "coordinates": { "lat": 37.2982, "lon": -113.0263 },
+    "elevation_m": 1280,
+    "climate_zone": "high desert",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Park entry is reasonable; Springdale lodging is pricey but necessary for access.",
+    "access": { "nearest_major_airport": "LAS", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1527489377706-5bf97e608852?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Erin Doering / Unsplash",
+      "alt": "Vermilion sandstone walls towering above the Virgin River in Zion Canyon"
+    },
+    "summary": "Vermilion sandstone walls rising 600m on either side while you wade through a slot canyon river — the Narrows is one of those hikes you do once and never stop describing. The park's popularity has made it a victim of its own beauty.",
+    "signature_experiences": [
+      "The Narrows — wading upriver through a cathedral of Navajo sandstone",
+      "Angels Landing via the chain section (permit required)",
+      "Canyon Overlook Trail for a 45-minute payoff sunrise"
+    ],
+    "caveats": [
+      "Angels Landing requires an advance permit lottery — book 3 months out via recreation.gov.",
+      "The park shuttle is mandatory in peak season; no private vehicles in Zion Canyon."
+    ],
+    "metrics": {
+      "food_scene": 2.0,
+      "cultural_depth": 2.0,
+      "outdoor_access": 5.0,
+      "nightlife": 1.0,
+      "shopping": 2.0,
+      "family_friendly": 3.8,
+      "romance": 4.5,
+      "adventure": 5.0,
+      "off_season_viability": 3.0,
+      "photography": 5.0,
+      "crowd_pressure": 4.5,
+      "value_for_money": 3.5
+    },
+    "tags": ["zion", "utah", "national-park"]
+  },
+  {
+    "id": "lake-tahoe",
+    "name": "Lake Tahoe",
+    "region": { "country": "United States", "subdivision": "California / Nevada", "continent": "North America" },
+    "coordinates": { "lat": 39.0968, "lon": -120.0324 },
+    "elevation_m": 1897,
+    "climate_zone": "humid continental alpine",
+    "best_seasons": ["summer", "winter"],
+    "shoulder_seasons": ["late spring", "early fall"],
+    "cost_tier": 4,
+    "cost_notes": "Lodging spikes hard in peak ski and summer windows; midweek shoulder can be reasonable.",
+    "access": { "nearest_major_airport": "RNO", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Bailey Zindel / Unsplash",
+      "alt": "Emerald Bay at sunrise with pine-lined granite shore and cascading morning light"
+    },
+    "summary": "A high-elevation alpine lake straddling the Sierra Nevada crest, equally serious about powder days and lake days. Casino-adjacent in spots, wild in others.",
+    "signature_experiences": [
+      "Emerald Bay overlook at first light — the inlet is a legitimate wonder",
+      "Heavenly or Palisades ski days above the cloud line",
+      "Stand-up paddleboard on Sand Harbor in the crystal-clear shallows"
+    ],
+    "caveats": [
+      "South shore can feel commercial and suburban; choose lodging carefully.",
+      "Wildfire smoke risk in late summer has increased significantly."
+    ],
+    "metrics": {
+      "food_scene": 4.0,
+      "cultural_depth": 2.8,
+      "outdoor_access": 4.9,
+      "nightlife": 4.0,
+      "shopping": 3.6,
+      "family_friendly": 4.5,
+      "romance": 4.2,
+      "adventure": 4.7,
+      "off_season_viability": 3.8,
+      "photography": 4.8,
+      "crowd_pressure": 3.2,
+      "value_for_money": 3.0
+    },
+    "tags": ["tahoe", "sierra", "ski"]
+  },
+  {
+    "id": "lake-geneva",
+    "name": "Lake Geneva",
+    "region": { "country": "Switzerland", "subdivision": "Vaud / Geneva", "continent": "Europe" },
+    "coordinates": { "lat": 46.4520, "lon": 6.6322 },
+    "elevation_m": 372,
+    "climate_zone": "semi-oceanic with Mediterranean microclimate",
+    "best_seasons": ["summer", "spring"],
+    "shoulder_seasons": ["fall"],
+    "cost_tier": 5,
+    "cost_notes": "Switzerland is expensive at a level that surprises even seasoned travelers — budget CHF 400+/person/day for a comfortable experience.",
+    "access": { "nearest_major_airport": "GVA", "flight_access_score": 5, "visa_difficulty": 2 },
+    "languages": ["French", "English"],
+    "currency": "CHF",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Claudio Schwarz / Unsplash",
+      "alt": "Lake Geneva at dusk with the Alps mirrored in still water and a Belle Epoque paddle steamer"
+    },
+    "summary": "Fondue at a chateau above the most famous Pinot Noir vineyards in Switzerland, with the Alps reflected in impossibly still water. The cost will remind you this is Switzerland.",
+    "signature_experiences": [
+      "Lavaux terraced vineyard UNESCO walk above Vevey — late afternoon light is extraordinary",
+      "Chillon Castle on the water's edge, 12th-century and surreally intact",
+      "Belle Epoque paddle steamer cruise between Lausanne and Montreux"
+    ],
+    "caveats": [
+      "Switzerland's cost of living is extreme — even coffee and a pastry will surprise you.",
+      "Summer lake swimming is excellent but most public beaches are modest in size."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 4.0,
+      "outdoor_access": 4.0,
+      "nightlife": 3.5,
+      "shopping": 4.5,
+      "family_friendly": 4.2,
+      "romance": 4.8,
+      "adventure": 3.0,
+      "off_season_viability": 4.0,
+      "photography": 4.5,
+      "crowd_pressure": 3.0,
+      "value_for_money": 1.5
+    },
+    "tags": ["lake-geneva", "switzerland", "alps"]
+  },
+  {
+    "id": "lisbon",
+    "name": "Lisbon",
+    "region": { "country": "Portugal", "subdivision": "Lisbon Metropolitan Area", "continent": "Europe" },
+    "coordinates": { "lat": 38.7169, "lon": -9.1395 },
+    "elevation_m": 2,
+    "climate_zone": "Mediterranean",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Still affordable versus Western European peers, but prices have risen substantially since 2019.",
+    "access": { "nearest_major_airport": "LIS", "flight_access_score": 5, "visa_difficulty": 2 },
+    "languages": ["Portuguese", "English"],
+    "currency": "EUR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1555881400-74d7acaacd2b?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Lisa Fotios / Unsplash",
+      "alt": "Alfama hillside at dusk with terracotta rooftops and the Tejo estuary beyond"
+    },
+    "summary": "Seven hills of azulejo-tiled facades, trams that have been running since 1873, and pastéis de nata that make you resent every pastry you've eaten before. Now unfortunately one of Europe's most discovered secrets.",
+    "signature_experiences": [
+      "Sunset from Miradouro da Graça with a glass of Vinho Verde",
+      "Fado show in Alfama on a Tuesday when the tourists thin out",
+      "Pastéis de nata at Pastéis de Belém the moment they open"
+    ],
+    "caveats": [
+      "Gentrification has reshaped Alfama and Mouraria; the authentic experience requires getting off the tram lines.",
+      "Peak summer (July–Aug) is hot, expensive, and extremely crowded."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 4.2,
+      "outdoor_access": 3.0,
+      "nightlife": 4.0,
+      "shopping": 3.5,
+      "family_friendly": 4.0,
+      "romance": 4.5,
+      "adventure": 2.5,
+      "off_season_viability": 4.0,
+      "photography": 4.8,
+      "crowd_pressure": 3.8,
+      "value_for_money": 3.8
+    },
+    "tags": ["lisbon", "portugal", "fado"]
+  },
+  {
+    "id": "amalfi-coast",
+    "name": "Amalfi Coast",
+    "region": { "country": "Italy", "subdivision": "Campania", "continent": "Europe" },
+    "coordinates": { "lat": 40.6339, "lon": 14.6028 },
+    "elevation_m": 0,
+    "climate_zone": "Mediterranean",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 4,
+    "cost_notes": "Positano is premium; Amalfi town and further east offer lower rates. Summer peaks are eye-watering.",
+    "access": { "nearest_major_airport": "NAP", "flight_access_score": 4, "visa_difficulty": 2 },
+    "languages": ["Italian", "English"],
+    "currency": "EUR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1633321702599-f50a10e0a37a?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Pexels / Various / Unsplash",
+      "alt": "Pastel buildings terraced into cliff above the Tyrrhenian Sea on the Amalfi Coast"
+    },
+    "summary": "Verticality as landscape design: lemon groves and pastel villages terraced into cliffs above a Tyrrhenian blue that has no business looking that color. July and August turn it into a slow-moving traffic jam.",
+    "signature_experiences": [
+      "Sentiero degli Dei (Path of the Gods) ridge walk from Bomerano to Nocelle",
+      "Positano from the water — rent a boat from the harbor and look back",
+      "Fresh-caught branzino at a cliff-side Ravello restaurant with the valley below"
+    ],
+    "caveats": [
+      "The coastal road SS163 is genuinely narrow and harrowing in a rental car — take ferries between towns.",
+      "Book Positano accommodation 6+ months ahead for any summer stay."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 3.5,
+      "outdoor_access": 3.8,
+      "nightlife": 3.0,
+      "shopping": 3.0,
+      "family_friendly": 2.5,
+      "romance": 5.0,
+      "adventure": 3.2,
+      "off_season_viability": 2.5,
+      "photography": 5.0,
+      "crowd_pressure": 4.5,
+      "value_for_money": 2.5
+    },
+    "tags": ["amalfi", "italy", "mediterranean"]
+  },
+  {
+    "id": "santorini",
+    "name": "Santorini",
+    "region": { "country": "Greece", "subdivision": "South Aegean", "continent": "Europe" },
+    "coordinates": { "lat": 36.3932, "lon": 25.4615 },
+    "elevation_m": 300,
+    "climate_zone": "Mediterranean semi-arid",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 4,
+    "cost_notes": "Caldera-view infinity pools command extreme premiums; Pyrgos and Megalochori villages offer the same beauty for less.",
+    "access": { "nearest_major_airport": "JTR", "flight_access_score": 3, "visa_difficulty": 2 },
+    "languages": ["Greek", "English"],
+    "currency": "EUR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Anthony Delanoix / Unsplash",
+      "alt": "Blue-domed churches above the Santorini caldera with the Aegean stretching to the horizon"
+    },
+    "summary": "Blue-domed churches over a drowned caldera, with sunsets that feel like they were designed by a committee of romantics. The cliché exists for good reason, even if the tourist density has reached unsustainable levels.",
+    "signature_experiences": [
+      "Oia sunset — arrive 2 hours early for a seat, or watch from the water",
+      "Akrotiri Bronze Age archaeological site — Minoan Pompeii, far less visited than it deserves",
+      "Wine tasting at Santo Wines on the caldera edge — local Assyrtiko is genuinely world-class"
+    ],
+    "caveats": [
+      "Oia is essentially a tourist queue from June to September; Pyrgos has the same architecture with a tenth of the crowds.",
+      "Santorini Airport is challenging for pilots; weather delays are common."
+    ],
+    "metrics": {
+      "food_scene": 3.8,
+      "cultural_depth": 3.2,
+      "outdoor_access": 2.8,
+      "nightlife": 3.0,
+      "shopping": 3.0,
+      "family_friendly": 2.5,
+      "romance": 5.0,
+      "adventure": 2.5,
+      "off_season_viability": 2.0,
+      "photography": 5.0,
+      "crowd_pressure": 4.8,
+      "value_for_money": 2.0
+    },
+    "tags": ["santorini", "greece", "aegean"]
+  },
+  {
+    "id": "prague",
+    "name": "Prague",
+    "region": { "country": "Czech Republic", "subdivision": "Bohemia", "continent": "Europe" },
+    "coordinates": { "lat": 50.0755, "lon": 14.4378 },
+    "elevation_m": 200,
+    "climate_zone": "humid continental",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Still one of the best-value major European capitals; beer is cheaper than water in most pubs.",
+    "access": { "nearest_major_airport": "PRG", "flight_access_score": 5, "visa_difficulty": 2 },
+    "languages": ["Czech", "English"],
+    "currency": "CZK",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1519373359-b8a9b9d638b6?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Ladislav Bona / Unsplash",
+      "alt": "Charles Bridge at dawn with baroque statues and Gothic towers under morning mist"
+    },
+    "summary": "Central Europe's most photogenic old town, where baroque spires compete with Gothic towers and the beer is criminally cheap. Now sharing that secret with enormous bachelor party contingents.",
+    "signature_experiences": [
+      "Pre-dawn walk across Charles Bridge in November fog — the crowds haven't arrived",
+      "Old Town Square astronomical clock and the medieval mechanics behind it",
+      "Svíčková (beef sirloin with cream sauce) and Czech amber lager at U Fleků brewery"
+    ],
+    "caveats": [
+      "The Royal Mile corridor and Charles Bridge are essentially impassable in peak season — schedule early morning or late evening.",
+      "Some tourist-zone restaurants charge wildly inconsistent prices — check the menu before sitting."
+    ],
+    "metrics": {
+      "food_scene": 3.8,
+      "cultural_depth": 4.8,
+      "outdoor_access": 2.5,
+      "nightlife": 4.5,
+      "shopping": 3.5,
+      "family_friendly": 3.8,
+      "romance": 4.5,
+      "adventure": 2.0,
+      "off_season_viability": 4.5,
+      "photography": 4.8,
+      "crowd_pressure": 4.5,
+      "value_for_money": 4.0
+    },
+    "tags": ["prague", "czech", "bohemia"]
+  },
+  {
+    "id": "dubrovnik",
+    "name": "Dubrovnik",
+    "region": { "country": "Croatia", "subdivision": "Dalmatia", "continent": "Europe" },
+    "coordinates": { "lat": 42.6507, "lon": 18.0944 },
+    "elevation_m": 0,
+    "climate_zone": "Mediterranean",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 3,
+    "cost_notes": "Has priced up significantly since the Game of Thrones effect; shoulder season offers 40% reductions.",
+    "access": { "nearest_major_airport": "DBV", "flight_access_score": 4, "visa_difficulty": 2 },
+    "languages": ["Croatian", "English"],
+    "currency": "EUR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Marin Tulić / Unsplash",
+      "alt": "Dubrovnik's orange-roofed Old City rising above the Adriatic from the Srđ cable car"
+    },
+    "summary": "A perfectly preserved medieval walled city above the Adriatic, orange-roofed and improbably beautiful. Game of Thrones put it on a map it didn't need — now a cruise ship destination struggling with the consequences.",
+    "signature_experiences": [
+      "Walk the complete Old City walls at 7:30am before the cruise ships arrive",
+      "Lokrum Island by kayak from the Old Town harbor — 15 minutes, entirely different world",
+      "Fish stew (brudet) with polenta at a konoba in the Konavle valley"
+    ],
+    "caveats": [
+      "10,000+ day-trippers can arrive on the same morning from cruise ships — staying inside the walls avoids the worst of it.",
+      "Walking the walls in July heat requires serious hydration planning."
+    ],
+    "metrics": {
+      "food_scene": 3.5,
+      "cultural_depth": 4.0,
+      "outdoor_access": 3.2,
+      "nightlife": 3.5,
+      "shopping": 2.5,
+      "family_friendly": 3.0,
+      "romance": 4.5,
+      "adventure": 3.0,
+      "off_season_viability": 2.5,
+      "photography": 4.8,
+      "crowd_pressure": 5.0,
+      "value_for_money": 2.5
+    },
+    "tags": ["dubrovnik", "croatia", "adriatic"]
+  },
+  {
+    "id": "tokyo",
+    "name": "Tokyo",
+    "region": { "country": "Japan", "subdivision": "Kantō", "continent": "Asia" },
+    "coordinates": { "lat": 35.6762, "lon": 139.6503 },
+    "elevation_m": 40,
+    "climate_zone": "humid subtropical",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 3,
+    "cost_notes": "Mid-range by world standards despite reputation; exceptional value in dining compared to other global cities.",
+    "access": { "nearest_major_airport": "HND", "flight_access_score": 5, "visa_difficulty": 1 },
+    "languages": ["Japanese"],
+    "currency": "JPY",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jase Bloor / Unsplash",
+      "alt": "Tokyo skyline at dusk with neon reflections and the silhouette of Mount Fuji"
+    },
+    "summary": "The city that took every human pleasure — food, design, transit, retail, nightlife — and optimized it to an almost uncomfortable degree. If you're bothered by efficiency, order, and relentless excellence, this is the wrong place.",
+    "signature_experiences": [
+      "Tsukiji outer market at 6am for sushi breakfast before the tourists arrive",
+      "Shinjuku Gyoen garden at hanami season — subtler and less crowded than Ueno",
+      "Depachika basement food halls of Isetan or Takashimaya — a deliberate labyrinth"
+    ],
+    "caveats": [
+      "Language barrier is real beyond tourist zones — download offline Japanese translation and learn a handful of phrases.",
+      "Cherry blossom accommodation books up 6–12 months ahead; don't wing this timing."
+    ],
+    "metrics": {
+      "food_scene": 5.0,
+      "cultural_depth": 4.8,
+      "outdoor_access": 3.0,
+      "nightlife": 4.5,
+      "shopping": 5.0,
+      "family_friendly": 4.5,
+      "romance": 4.0,
+      "adventure": 3.0,
+      "off_season_viability": 4.5,
+      "photography": 4.8,
+      "crowd_pressure": 3.8,
+      "value_for_money": 3.8
+    },
+    "tags": ["tokyo", "japan", "metropolis"]
+  },
+  {
+    "id": "kyoto",
+    "name": "Kyoto",
+    "region": { "country": "Japan", "subdivision": "Kansai", "continent": "Asia" },
+    "coordinates": { "lat": 35.0116, "lon": 135.7681 },
+    "elevation_m": 49,
+    "climate_zone": "humid subtropical with four distinct seasons",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 3,
+    "cost_notes": "Comparable to Tokyo; traditional ryokan accommodation adds premium but is worth budgeting for at least one night.",
+    "access": { "nearest_major_airport": "KIX", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["Japanese"],
+    "currency": "JPY",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Liger Pham / Unsplash",
+      "alt": "Thousands of vermilion torii gates climbing Fushimi Inari mountain at dusk"
+    },
+    "summary": "Japan's old capital for a thousand years, with more registered cultural assets than anywhere else in the country. Seventeen UNESCO sites and a ryokan breakfast that will recalibrate your expectations of a morning meal.",
+    "signature_experiences": [
+      "Arashiyama bamboo grove at 6am before the tour buses arrive",
+      "Fushimi Inari torii gate hike all the way to the summit — the tourist masses stop halfway",
+      "Kaiseki dinner at a traditional machiya restaurant in Gion — reserve weeks ahead"
+    ],
+    "caveats": [
+      "Gion Matsuri and cherry blossom season are spectacular but accommodation books up a year out.",
+      "The city now imposes photography rules in Gion's Hanamikoji Street — respect them or you will be confronted by locals."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 5.0,
+      "outdoor_access": 3.5,
+      "nightlife": 2.5,
+      "shopping": 3.8,
+      "family_friendly": 4.0,
+      "romance": 4.5,
+      "adventure": 2.5,
+      "off_season_viability": 4.0,
+      "photography": 5.0,
+      "crowd_pressure": 4.2,
+      "value_for_money": 3.5
+    },
+    "tags": ["kyoto", "japan", "temples"]
+  },
+  {
+    "id": "bali",
+    "name": "Bali",
+    "region": { "country": "Indonesia", "subdivision": "Bali Province", "continent": "Asia" },
+    "coordinates": { "lat": -8.3405, "lon": 115.0920 },
+    "elevation_m": 0,
+    "climate_zone": "tropical monsoon",
+    "best_seasons": ["summer"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 2,
+    "cost_notes": "Ubud is the value sweet spot; Seminyak and Canggu have priced up to mid-Western levels for accommodation.",
+    "access": { "nearest_major_airport": "DPS", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["Balinese", "Indonesian", "English"],
+    "currency": "IDR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jeremy Bishop / Unsplash",
+      "alt": "Terraced Tegallalang rice paddies at sunrise with mist in the valley below"
+    },
+    "summary": "A Hindu island in the world's largest Muslim nation, with rice terraces stepped into volcanic hillsides and ceremonial culture woven into daily life. The spiritual dimension is real; the Seminyak nightlife strip less so.",
+    "signature_experiences": [
+      "Jatiluwih rice terrace UNESCO sunrise walk — quieter and more authentic than Tegallalang",
+      "Tirta Empul temple purification ritual (as a respectful observer)",
+      "Nusa Penida snorkeling with manta rays at Manta Bay — accessible day trip"
+    ],
+    "caveats": [
+      "Traffic between Seminyak/Kuta and Ubud is brutal at any hour; budget extra time for every journey.",
+      "Wet season (November–March) means daily afternoon rain and some attraction closures."
+    ],
+    "metrics": {
+      "food_scene": 4.0,
+      "cultural_depth": 4.5,
+      "outdoor_access": 4.5,
+      "nightlife": 4.0,
+      "shopping": 4.0,
+      "family_friendly": 3.8,
+      "romance": 4.5,
+      "adventure": 4.2,
+      "off_season_viability": 3.0,
+      "photography": 4.8,
+      "crowd_pressure": 3.5,
+      "value_for_money": 4.5
+    },
+    "tags": ["bali", "indonesia", "temples"]
+  },
+  {
+    "id": "penang",
+    "name": "Penang",
+    "region": { "country": "Malaysia", "subdivision": "Penang State", "continent": "Asia" },
+    "coordinates": { "lat": 5.4141, "lon": 100.3288 },
+    "elevation_m": 10,
+    "climate_zone": "equatorial (hot and humid year-round)",
+    "best_seasons": ["winter", "summer"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 1,
+    "cost_notes": "Exceptional value — world-class hawker meals for under $2 USD; accommodation ranges from budget guesthouses to boutique heritage hotels.",
+    "access": { "nearest_major_airport": "PEN", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["English", "Malay", "Mandarin", "Tamil"],
+    "currency": "MYR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1596422846543-4f48a68b0ed2?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Fikri Rasyid / Unsplash",
+      "alt": "Armenian Street murals and shophouse facades of George Town's UNESCO heritage core"
+    },
+    "summary": "Southeast Asia's most underrated food city — char kway teow, assam laksa, and nasi kandar from hawker stalls that have been operating for three generations. The UNESCO-listed colonial core is genuinely beautiful and mercifully crowd-free.",
+    "signature_experiences": [
+      "Breakfast hawker circuit starting at Lorong Selamat for char kway teow",
+      "Armenian Street murals and Cheong Fatt Tze Blue Mansion heritage tour",
+      "Penang Hill sunrise via the heritage funicular — the city spread below in morning haze"
+    ],
+    "caveats": [
+      "The food scene is the primary reason to visit — prioritize eating over conventional sightseeing.",
+      "Getting around requires Grab (ride-hailing) or a rented scooter; public transport is limited."
+    ],
+    "metrics": {
+      "food_scene": 5.0,
+      "cultural_depth": 4.5,
+      "outdoor_access": 2.8,
+      "nightlife": 3.0,
+      "shopping": 3.5,
+      "family_friendly": 4.0,
+      "romance": 3.5,
+      "adventure": 2.5,
+      "off_season_viability": 4.5,
+      "photography": 4.5,
+      "crowd_pressure": 2.5,
+      "value_for_money": 5.0
+    },
+    "tags": ["penang", "malaysia", "hawker"]
+  },
+  {
+    "id": "istanbul",
+    "name": "Istanbul",
+    "region": { "country": "Turkey", "subdivision": "Marmara Region", "continent": "Asia / Europe" },
+    "coordinates": { "lat": 41.0082, "lon": 28.9784 },
+    "elevation_m": 40,
+    "climate_zone": "Mediterranean / humid subtropical",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Currency volatility has made Istanbul very favorable for foreign visitors; check current TRY rates.",
+    "access": { "nearest_major_airport": "IST", "flight_access_score": 5, "visa_difficulty": 2 },
+    "languages": ["Turkish", "English"],
+    "currency": "TRY",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1534430480872-1c3ac46fa2bc?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Spencer Davis / Unsplash",
+      "alt": "Hagia Sophia and Blue Mosque silhouetted against a crimson Istanbul sunset"
+    },
+    "summary": "The only city straddling two continents, with enough Byzantine and Ottoman history layered into its hills to fill years of study. The Grand Bazaar alone contains 60 covered streets and 4,000 shops.",
+    "signature_experiences": [
+      "Hagia Sophia at opening time — 1,500 years of religious history under one dome",
+      "Bosphorus ferry commute from Eminönü to Kadıköy and back — a $1 urban panorama",
+      "Meyhane evening in Beyoğlu — rakı, meze, and conversation until 2am"
+    ],
+    "caveats": [
+      "Currency has been volatile in recent years; research the actual exchange rate before arriving.",
+      "Taxis and unsolicited guides on İstiklal Caddesi can be aggressive — walk where possible."
+    ],
+    "metrics": {
+      "food_scene": 4.8,
+      "cultural_depth": 5.0,
+      "outdoor_access": 2.5,
+      "nightlife": 4.0,
+      "shopping": 4.5,
+      "family_friendly": 3.5,
+      "romance": 4.2,
+      "adventure": 2.5,
+      "off_season_viability": 4.5,
+      "photography": 4.8,
+      "crowd_pressure": 3.5,
+      "value_for_money": 4.5
+    },
+    "tags": ["istanbul", "turkey", "ottoman"]
+  },
+  {
+    "id": "angkor",
+    "name": "Angkor (Siem Reap)",
+    "region": { "country": "Cambodia", "subdivision": "Siem Reap Province", "continent": "Asia" },
+    "coordinates": { "lat": 13.4125, "lon": 103.8670 },
+    "elevation_m": 16,
+    "climate_zone": "tropical monsoon",
+    "best_seasons": ["winter"],
+    "shoulder_seasons": ["spring"],
+    "cost_tier": 1,
+    "cost_notes": "Angkor pass is required (varies by days); everything else — accommodation, food, transport — is very affordable.",
+    "access": { "nearest_major_airport": "REP", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["Khmer", "English"],
+    "currency": "USD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1568895756984-9f32d680a5f4?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Valentina Locatelli / Unsplash",
+      "alt": "Angkor Wat's towers reflected in the reservoir at dawn under a pink and gold sky"
+    },
+    "summary": "The largest religious monument ever built, engulfed by jungle for centuries before partial restoration — Angkor Wat at sunrise is one of those visual events that remains in the memory as a permanent benchmark.",
+    "signature_experiences": [
+      "Angkor Wat sunrise from the western causeway — one of the world's great dawn events",
+      "Ta Prohm tree-roots ruins before the tour buses (before 8am)",
+      "Preah Khan temple bicycle loop — quieter, longer, magnificently atmospheric"
+    ],
+    "caveats": [
+      "A knowledgeable guide is transformative — the historical and religious context is irreplaceable.",
+      "Wet season flooding can make some areas inaccessible, though Angkor Wat itself remains open year-round."
+    ],
+    "metrics": {
+      "food_scene": 3.0,
+      "cultural_depth": 5.0,
+      "outdoor_access": 3.0,
+      "nightlife": 2.5,
+      "shopping": 3.0,
+      "family_friendly": 3.5,
+      "romance": 3.5,
+      "adventure": 3.2,
+      "off_season_viability": 2.5,
+      "photography": 5.0,
+      "crowd_pressure": 3.0,
+      "value_for_money": 5.0
+    },
+    "tags": ["angkor", "cambodia", "khmer"]
+  },
+  {
+    "id": "cusco",
+    "name": "Cusco & Machu Picchu",
+    "region": { "country": "Peru", "subdivision": "Cusco Region", "continent": "South America" },
+    "coordinates": { "lat": -13.5319, "lon": -71.9675 },
+    "elevation_m": 3399,
+    "climate_zone": "subtropical highland",
+    "best_seasons": ["summer"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 2,
+    "cost_notes": "Machu Picchu entry requires advance timed ticket purchase; Inca Trail permits sell out months ahead. City accommodation is affordable.",
+    "access": { "nearest_major_airport": "CUZ", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["Spanish", "Quechua"],
+    "currency": "PEN",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Willian Justen de Vasconcellos / Unsplash",
+      "alt": "Machu Picchu citadel emerging from cloud and jungle at dawn with Huayna Picchu above"
+    },
+    "summary": "An Inca capital the Spanish colonized without destroying its bones — then above it, a citadel they never found, hanging between two mountain peaks in morning cloud. Altitude will humble you in either location.",
+    "signature_experiences": [
+      "Sun Gate (Inti Punku) viewpoint approach on the Inca Trail — earned, not given",
+      "San Pedro Market in Cusco for a local breakfast and the full sensory experience",
+      "Sacred Valley circuit through Pisac and Ollantaytambo ruins with fewer crowds"
+    ],
+    "caveats": [
+      "Altitude sickness is a real risk at Cusco (3400m) — spend 2 days acclimatizing before heavy activity. Coca tea helps; ibuprofen and hydration help more.",
+      "Machu Picchu entry is timed and limited; purchase tickets weeks ahead on the official portal."
+    ],
+    "metrics": {
+      "food_scene": 3.5,
+      "cultural_depth": 5.0,
+      "outdoor_access": 4.8,
+      "nightlife": 2.5,
+      "shopping": 3.5,
+      "family_friendly": 2.5,
+      "romance": 4.0,
+      "adventure": 4.8,
+      "off_season_viability": 2.0,
+      "photography": 5.0,
+      "crowd_pressure": 3.8,
+      "value_for_money": 3.5
+    },
+    "tags": ["cusco", "peru", "inca"]
+  },
+  {
+    "id": "buenos-aires",
+    "name": "Buenos Aires",
+    "region": { "country": "Argentina", "subdivision": "Buenos Aires", "continent": "South America" },
+    "coordinates": { "lat": -34.6037, "lon": -58.3816 },
+    "elevation_m": 25,
+    "climate_zone": "humid subtropical",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Favorable for foreign visitors due to favorable currency exchange; research the actual rate before arriving.",
+    "access": { "nearest_major_airport": "EZE", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["Spanish"],
+    "currency": "ARS",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1567328669857-0e20d5a0fd80?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Sasha • Stories / Unsplash",
+      "alt": "Colorful La Boca neighborhood houses and tango dancers in the late afternoon sun"
+    },
+    "summary": "The 'Paris of South America' is a lazy comparison that understates how specifically Argentine the city is — the tango is not folk art, it's a living social practice; the beef culture is theological; the nightlife starts at midnight and that's early.",
+    "signature_experiences": [
+      "Milonga at El Viejo Almacén in San Telmo — authentic social tango, not performance",
+      "Asado lunch at a Palermo parrilla with a Malbec from Mendoza",
+      "Recoleta Cemetery on a quiet morning — extraordinary funerary architecture"
+    ],
+    "caveats": [
+      "Argentina's currency situation is complex — research the unofficial exchange rate before arriving.",
+      "Safety varies significantly by neighborhood; stick to Palermo, Recoleta, San Telmo, and Puerto Madero."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 4.8,
+      "outdoor_access": 2.5,
+      "nightlife": 5.0,
+      "shopping": 3.5,
+      "family_friendly": 3.2,
+      "romance": 4.5,
+      "adventure": 2.5,
+      "off_season_viability": 4.0,
+      "photography": 4.3,
+      "crowd_pressure": 2.5,
+      "value_for_money": 4.5
+    },
+    "tags": ["buenos-aires", "argentina", "tango"]
+  },
+  {
+    "id": "torres-del-paine",
+    "name": "Torres del Paine",
+    "region": { "country": "Chile", "subdivision": "Magallanes Region", "continent": "South America" },
+    "coordinates": { "lat": -50.9423, "lon": -73.4068 },
+    "elevation_m": 180,
+    "climate_zone": "subantarctic; highly variable",
+    "best_seasons": ["summer"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 3,
+    "cost_notes": "Getting here is expensive (flights to Punta Arenas, then transfer); inside the park, campsites vs. lodges vary enormously in cost.",
+    "access": { "nearest_major_airport": "PUQ", "flight_access_score": 2, "visa_difficulty": 1 },
+    "languages": ["Spanish"],
+    "currency": "CLP",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jeremy Bishop / Unsplash",
+      "alt": "The three granite towers of Torres del Paine reflected in still glacial water at dawn"
+    },
+    "summary": "Granite towers piercing Patagonian sky above jade glacial lakes and southern beech forest — one of the most dramatically scaled landscapes on Earth. Getting here is a full expedition; that's the point.",
+    "signature_experiences": [
+      "W Trek to Mirador Las Torres at dawn — 2.5-hour approach rewards with the classic reflection",
+      "Grey Glacier kayak approach — blue ice calving into slate water",
+      "Condor soaring circles above Valle del Francés — a 4-hour valley hike that climaxes in silence"
+    ],
+    "caveats": [
+      "Wind speeds regularly exceed 100km/h — this is not metaphorical. High-quality gear is mandatory.",
+      "W Trek campsite booking opens October 15 for the following season and fills within hours."
+    ],
+    "metrics": {
+      "food_scene": 2.0,
+      "cultural_depth": 1.5,
+      "outdoor_access": 5.0,
+      "nightlife": 1.0,
+      "shopping": 1.0,
+      "family_friendly": 2.0,
+      "romance": 4.5,
+      "adventure": 5.0,
+      "off_season_viability": 1.0,
+      "photography": 5.0,
+      "crowd_pressure": 2.0,
+      "value_for_money": 2.5
+    },
+    "tags": ["patagonia", "chile", "trekking"]
+  },
+  {
+    "id": "marrakech",
+    "name": "Marrakech",
+    "region": { "country": "Morocco", "subdivision": "Marrakech-Safi Region", "continent": "Africa" },
+    "coordinates": { "lat": 31.6295, "lon": -7.9811 },
+    "elevation_m": 466,
+    "climate_zone": "semi-arid hot desert with cooler winters",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Excellent value overall; riads (traditional guesthouses) range from budget to genuinely luxurious.",
+    "access": { "nearest_major_airport": "RAK", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["Darija (Moroccan Arabic)", "Berber", "French"],
+    "currency": "MAD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1569880153113-76161b5e8e6d?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Yeo Khee / Unsplash",
+      "alt": "Djemaa el-Fna square at dusk with smoke rising from food stalls and the Koutoubia mosque above"
+    },
+    "summary": "A medina that hasn't changed its fundamental geometry in 900 years — leather tanneries, spice souks, and snake charmers in the main square at dusk. Disorientating by design and magnificent for it.",
+    "signature_experiences": [
+      "Djemaa el-Fna square from sunset into evening — food stalls and performers materialize",
+      "Bahia Palace and Saadian Tombs on the same morning",
+      "Day trip to Atlas Mountain Berber villages and the Ouzoud waterfalls"
+    ],
+    "caveats": [
+      "The leather tanneries require purchasing something for entry — negotiate price before agreeing.",
+      "First-visit navigation of the medina is genuinely disorienting; a guide for the first morning pays for itself."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 4.8,
+      "outdoor_access": 3.0,
+      "nightlife": 2.5,
+      "shopping": 5.0,
+      "family_friendly": 3.2,
+      "romance": 4.0,
+      "adventure": 3.5,
+      "off_season_viability": 3.5,
+      "photography": 4.8,
+      "crowd_pressure": 3.5,
+      "value_for_money": 4.2
+    },
+    "tags": ["marrakech", "morocco", "medina"]
+  },
+  {
+    "id": "cape-town",
+    "name": "Cape Town",
+    "region": { "country": "South Africa", "subdivision": "Western Cape", "continent": "Africa" },
+    "coordinates": { "lat": -33.9249, "lon": 18.4241 },
+    "elevation_m": 0,
+    "climate_zone": "Mediterranean",
+    "best_seasons": ["summer", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Excellent value for international visitors due to favorable exchange rates; world-class wine country nearby.",
+    "access": { "nearest_major_airport": "CPT", "flight_access_score": 4, "visa_difficulty": 1 },
+    "languages": ["Afrikaans", "English", "Xhosa"],
+    "currency": "ZAR",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jarryd Craig / Unsplash",
+      "alt": "Cape Town harbor and city bowl under Table Mountain's famous tablecloth cloud"
+    },
+    "summary": "A world-class food and wine scene against a backdrop of Table Mountain, great white sharks, and the meeting point of two oceans. The social and political complexity is real and worth engaging with, not sidestepping.",
+    "signature_experiences": [
+      "Table Mountain via Platteklip Gorge trail at dawn — the city bowl below in morning haze",
+      "Chapman's Peak drive at sunset with a bottle from a Constantia estate",
+      "Cape Point National Park to the Cape of Good Hope — the most dramatic coastal road"
+    ],
+    "caveats": [
+      "Crime is a genuine concern; avoid walking after dark in unfamiliar areas and leave valuables secured.",
+      "Water conservation habits are still expected by locals even after the crisis eased."
+    ],
+    "metrics": {
+      "food_scene": 4.0,
+      "cultural_depth": 4.0,
+      "outdoor_access": 4.8,
+      "nightlife": 3.8,
+      "shopping": 3.2,
+      "family_friendly": 3.5,
+      "romance": 4.2,
+      "adventure": 4.5,
+      "off_season_viability": 3.5,
+      "photography": 4.8,
+      "crowd_pressure": 2.5,
+      "value_for_money": 4.5
+    },
+    "tags": ["cape-town", "south-africa", "table-mountain"]
+  },
+  {
+    "id": "petra",
+    "name": "Petra",
+    "region": { "country": "Jordan", "subdivision": "Ma'an Governorate", "continent": "Middle East" },
+    "coordinates": { "lat": 30.3285, "lon": 35.4444 },
+    "elevation_m": 900,
+    "climate_zone": "semi-arid desert",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 2,
+    "cost_notes": "Entrance fee is the main cost; Jordan Pass bundles visa and Petra entry at good value.",
+    "access": { "nearest_major_airport": "AMM", "flight_access_score": 4, "visa_difficulty": 2 },
+    "languages": ["Arabic", "English"],
+    "currency": "JOD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Dan Novac / Unsplash",
+      "alt": "The rose-red Treasury façade of Petra emerging from the Siq gorge in morning light"
+    },
+    "summary": "A Nabataean city carved from rose-red sandstone cliffs, with the Treasury façade emerging from a kilometer-long gorge — one of the most theatrically staged archaeological reveals in existence.",
+    "signature_experiences": [
+      "Siq gorge walk to the Treasury at first light — the narrowing canyon and sudden reveal",
+      "High Place of Sacrifice trail above the main valley with panoramic views",
+      "Petra by Night candlelit ceremony in the Siq (runs Monday, Wednesday, Thursday)"
+    ],
+    "caveats": [
+      "Two days minimum to see the site properly; the Treasury is just the beginning of a very large city.",
+      "Horses at the entrance are often poorly treated — walking the Siq is recommended for ethical and experiential reasons."
+    ],
+    "metrics": {
+      "food_scene": 2.8,
+      "cultural_depth": 5.0,
+      "outdoor_access": 4.0,
+      "nightlife": 1.5,
+      "shopping": 3.0,
+      "family_friendly": 3.0,
+      "romance": 3.8,
+      "adventure": 4.0,
+      "off_season_viability": 3.5,
+      "photography": 5.0,
+      "crowd_pressure": 2.5,
+      "value_for_money": 3.0
+    },
+    "tags": ["petra", "jordan", "nabataean"]
+  },
+  {
+    "id": "queenstown",
+    "name": "Queenstown",
+    "region": { "country": "New Zealand", "subdivision": "Otago", "continent": "Oceania" },
+    "coordinates": { "lat": -45.0312, "lon": 168.6626 },
+    "elevation_m": 310,
+    "climate_zone": "oceanic highland",
+    "best_seasons": ["summer", "winter"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 3,
+    "cost_notes": "New Zealand is expensive; activities stack up fast — budget per-activity on top of accommodation.",
+    "access": { "nearest_major_airport": "ZQN", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["English", "Te Reo Māori"],
+    "currency": "NZD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1469521669194-babb45599def?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Willian West / Unsplash",
+      "alt": "Lake Wakatipu and the Remarkables range at dawn from Queenstown"
+    },
+    "summary": "The self-declared 'Adventure Capital of the World' — and a defensible title. Bungee jumping was invented here; so were jet boats. Against a backdrop of the Remarkables range and Lake Wakatipu, it's all the more extreme.",
+    "signature_experiences": [
+      "Nevis Bungee (134m, New Zealand's highest) for the committed",
+      "Milford Sound day cruise by coach and catamaran — one of the world's great fjords",
+      "Lake Wakatipu sunrise from the Queenstown Gardens"
+    ],
+    "caveats": [
+      "Queenstown is genuinely expensive across the board — accommodation, activities, and food all carry a premium.",
+      "Major activities book out weeks ahead in peak season (December–January)."
+    ],
+    "metrics": {
+      "food_scene": 3.5,
+      "cultural_depth": 2.5,
+      "outdoor_access": 5.0,
+      "nightlife": 3.5,
+      "shopping": 2.5,
+      "family_friendly": 3.5,
+      "romance": 4.5,
+      "adventure": 5.0,
+      "off_season_viability": 4.0,
+      "photography": 5.0,
+      "crowd_pressure": 3.0,
+      "value_for_money": 2.8
+    },
+    "tags": ["queenstown", "new-zealand", "adventure"]
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney",
+    "region": { "country": "Australia", "subdivision": "New South Wales", "continent": "Oceania" },
+    "coordinates": { "lat": -33.8688, "lon": 151.2093 },
+    "elevation_m": 0,
+    "climate_zone": "humid subtropical",
+    "best_seasons": ["spring", "fall"],
+    "shoulder_seasons": ["winter"],
+    "cost_tier": 4,
+    "cost_notes": "Australia's most expensive city; accommodation in particular requires advance booking and budget allocation.",
+    "access": { "nearest_major_airport": "SYD", "flight_access_score": 5, "visa_difficulty": 2 },
+    "languages": ["English"],
+    "currency": "AUD",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1523428096451-9a8f3b0d7ba4?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Dan Freeman / Unsplash",
+      "alt": "Sydney Opera House and Harbour Bridge from Circular Quay at sunrise"
+    },
+    "summary": "A world-class harbour city with beaches attached — the Bondi to Coogee coastal walk on a clear morning is as good as urban landscapes get. The food scene has matured from fusion curiosity to genuine cultural confidence.",
+    "signature_experiences": [
+      "Bondi to Coogee coastal walk at sunrise — 6km of cliffs, pools, and swimmers",
+      "Opera Bar terrace with the Bridge framed behind a glass of Australian Riesling",
+      "Barangaroo Reserve for indigenous plant knowledge and harbour views"
+    ],
+    "caveats": [
+      "Sydney is expensive — book accommodation months ahead and budget accordingly.",
+      "Summer heatwaves can exceed 40°C; plan outdoor activities for early morning and evenings."
+    ],
+    "metrics": {
+      "food_scene": 4.5,
+      "cultural_depth": 3.5,
+      "outdoor_access": 4.5,
+      "nightlife": 4.0,
+      "shopping": 4.0,
+      "family_friendly": 4.5,
+      "romance": 4.0,
+      "adventure": 3.8,
+      "off_season_viability": 4.0,
+      "photography": 4.8,
+      "crowd_pressure": 3.0,
+      "value_for_money": 2.8
+    },
+    "tags": ["sydney", "australia", "harbour"]
+  },
+  {
+    "id": "iceland",
+    "name": "Iceland",
+    "region": { "country": "Iceland", "subdivision": "Capital Region / South Region", "continent": "Europe" },
+    "coordinates": { "lat": 64.1355, "lon": -21.8954 },
+    "elevation_m": 0,
+    "climate_zone": "subpolar oceanic",
+    "best_seasons": ["summer", "winter"],
+    "shoulder_seasons": ["spring", "fall"],
+    "cost_tier": 4,
+    "cost_notes": "One of Europe's most expensive destinations; self-drive ring road with camping is the best value approach.",
+    "access": { "nearest_major_airport": "KEF", "flight_access_score": 4, "visa_difficulty": 2 },
+    "languages": ["Icelandic", "English"],
+    "currency": "ISK",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Jeremy Bishop / Unsplash",
+      "alt": "Northern lights over a snow-covered Icelandic landscape with a frozen lagoon"
+    },
+    "summary": "A working geology experiment at the scale of an island — volcanoes that close airports, geysers on a reliable schedule, waterfalls with a trail running behind them, and auroras on demand in winter. It earned the cliché.",
+    "signature_experiences": [
+      "Seljalandsfoss waterfall — one of the world's few you can walk behind",
+      "Jökulsárlón glacial lagoon at dawn with calving bergs floating to the black sand beach",
+      "Northern Lights chase from a dark farm location in November or March"
+    ],
+    "caveats": [
+      "F-roads (highland interior) require a 4WD and are closed until late June — don't attempt them in a normal rental or you'll lose your deposit.",
+      "Weather changes rapidly and unpredictably; layer heavily and check forecasts obsessively."
+    ],
+    "metrics": {
+      "food_scene": 3.2,
+      "cultural_depth": 3.0,
+      "outdoor_access": 5.0,
+      "nightlife": 3.5,
+      "shopping": 2.5,
+      "family_friendly": 4.0,
+      "romance": 4.5,
+      "adventure": 4.8,
+      "off_season_viability": 3.5,
+      "photography": 5.0,
+      "crowd_pressure": 2.5,
+      "value_for_money": 2.0
+    },
+    "tags": ["iceland", "northern-lights", "ring-road"]
+  },
+  {
+    "id": "svalbard",
+    "name": "Svalbard",
+    "region": { "country": "Norway", "subdivision": "Svalbard Archipelago", "continent": "Europe" },
+    "coordinates": { "lat": 78.2232, "lon": 15.6267 },
+    "elevation_m": 0,
+    "climate_zone": "Arctic tundra / polar desert",
+    "best_seasons": ["summer", "winter"],
+    "shoulder_seasons": ["spring"],
+    "cost_tier": 5,
+    "cost_notes": "Extremely expensive even by Norwegian standards; the remoteness premium is substantial.",
+    "access": { "nearest_major_airport": "LYR", "flight_access_score": 3, "visa_difficulty": 1 },
+    "languages": ["Norwegian", "Russian", "English"],
+    "currency": "NOK",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1520769945061-0a448c463865?w=800&h=600&fit=crop&auto=format&q=80",
+      "credit": "Thomas Lipke / Unsplash",
+      "alt": "Svalbard glacier and Arctic tundra under midnight sun with a polar bear in the distance"
+    },
+    "summary": "As close to nothing as civilization gets — a coal mining outpost turned polar tourism base where polar bears outnumber humans and the midnight sun lasts four months. This is not a destination; it's a pilgrimage for people who have run out of ordinary places.",
+    "signature_experiences": [
+      "Dog sledding across the Arctic tundra in March under polar light",
+      "Glacier hike on Longyearbreen with crampons and an ice axe",
+      "Polar bear watching from a Zodiac boat in the national park with a certified guide"
+    ],
+    "caveats": [
+      "You cannot leave the settlement boundary without a guide and a bear rifle — this is mandatory by law.",
+      "Cost of everything is extreme even by Norwegian standards; budget accordingly or this trip doesn't happen."
+    ],
+    "metrics": {
+      "food_scene": 2.5,
+      "cultural_depth": 2.8,
+      "outdoor_access": 5.0,
+      "nightlife": 1.5,
+      "shopping": 1.5,
+      "family_friendly": 2.5,
+      "romance": 4.0,
+      "adventure": 5.0,
+      "off_season_viability": 3.5,
+      "photography": 5.0,
+      "crowd_pressure": 1.0,
+      "value_for_money": 1.5
+    },
+    "tags": ["svalbard", "arctic", "polar"]
+  }
+]
